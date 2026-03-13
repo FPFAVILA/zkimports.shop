@@ -79,7 +79,7 @@ const ProductHero = ({ whatsappNumber = "556294330111", discountApplied = false 
 
   const handleBuyNow = async () => {
     const finalPrice = discountApplied ? DISCOUNTED_PRICE : ORIGINAL_PRICE;
-    await trackInitiateCheckout(finalPrice, `Kit Transformação iPhone XR - ${selectedColor}`);
+    await trackInitiateCheckout(finalPrice, `Kit Transformação iPhone X XS/XS MAX - ${selectedColor}`);
 
     window.scrollTo({ top: 0, behavior: "smooth" });
     navigate("/checkout", {
@@ -112,7 +112,7 @@ const ProductHero = ({ whatsappNumber = "556294330111", discountApplied = false 
             <img 
               key={selectedColor}
               src={currentImage} 
-              alt={`Kit para transformar iPhone XR em iPhone 13 Pro Max (${selectedColor})`}
+              alt={`Kit para transformar iPhone X XS/XS MAX em iPhone 13 Pro Max (${selectedColor})`}
               className="w-full h-full object-cover transition-all duration-500 animate-fade-in"
             />
           </div>
@@ -138,7 +138,7 @@ const ProductHero = ({ whatsappNumber = "556294330111", discountApplied = false 
         <div className="animate-fade-in space-y-4 order-2">
 
           <h1 className="text-2xl md:text-3xl font-display font-bold leading-tight">
-            Kit para Transformar iPhone XR no 13 Pro Max
+            Kit para Transformar iPhone X XS/XS MAX no 13 Pro Max
           </h1>
 
           {/* Rating Stars - Clickable */}
